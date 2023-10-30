@@ -1,16 +1,38 @@
+.hmtl {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 nav {
   width: 100%;
   height: 100px;
+  display: inline-flex;
+  padding: 33px 60px 32px 85px;
+  flex-wrap: wrap;
+  gap: 70%;
+  color: #7C6A0A;
 }
-
-main {
-  background-color: #FFEFE7;
+nav p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+nav .nav__icons {
+  margin: auto 0;
+}
+nav .nav__icons button {
+  background: none;
+  border-style: none;
+}
+nav .nav__icons button img {
+  width: 30px;
+  height: 30px;
 }
 
 footer {
