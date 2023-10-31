@@ -35,6 +35,50 @@ nav .nav__icons button img {
   height: 30px;
 }
 
+article {
+  color: #7C6A0A;
+  width: 100%;
+  height: auto;
+  padding: 0px 69px 0 65px;
+  display: inline-flex;
+}
+article h1 {
+  width: 514px;
+  height: 78px;
+  font-size: 3rem;
+  font-style: normal;
+}
+article .main__article-left {
+  width: 50%;
+  height: auto;
+}
+article .main__article-left p {
+  width: 592px;
+  height: 166px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-justify: content;
+}
+article .main__article-left button {
+  width: 261px;
+  height: 73px;
+  margin-top: 100px;
+  border-radius: 35px;
+  border-style: none;
+  background-color: #FA9500;
+  color: #FFEFE7;
+}
+article .main__article-rigth {
+  width: 50%;
+  height: auto;
+}
+article .main__article-rigth img {
+  width: 550px;
+  height: 686px;
+  margin: 0 auto;
+  border-radius: 19px;
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;
