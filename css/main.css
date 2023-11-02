@@ -82,6 +82,10 @@ article .main__article-rigth img {
   border-radius: 19px;
 }
 
+.main__product {
+  width: 100%;
+  height: auto;
+}
 footer {
   background-color: #FA9500;
   width: 100%;

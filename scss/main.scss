@@ -100,6 +100,18 @@ article {
 
 }
 
+.main__product {
+  width: 100%;
+  height: auto;
+  .main__product-health {
+
+  }
+
+  .main__product-furniture{
+
+  }
+}
+
 footer {
   $backgorund: $aditional-color;
   background-color: $backgorund;
