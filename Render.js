@@ -3,9 +3,15 @@ const healthContainer = document.querySelector('.main__product-health-cards');
 
 function renderCards(cardsType, container){
   cardsType.forEach(key => {
+    const sectionCards  = document.createElement('section');
+    sectionCards.classList.add('health__cards');
+
+    const divImage = document.createElement('div')
     const hearthImage = document.createElement('img');
     hearthImage.setAttribute('src', './assets/svg/heart.svg');
     hearthImage.setAttribute('alt', 'hearth logo');
+
+    divImage.append(hearthImage);
 
     const productImage = document.createElement('img');
     productImage.classList.add('img__product');
@@ -18,7 +24,9 @@ function renderCards(cardsType, container){
     const descriptionProduct = document.createElement('p');
     descriptionProduct.innerText = key.description;
 
-    container.append(hearthImage, productImage, titlePrduct, descriptionProduct);
+    sectionCards.append(divImage, productImage, titlePrduct, descriptionProduct);
+
+    container.append(sectionCards);
   });
 }
 

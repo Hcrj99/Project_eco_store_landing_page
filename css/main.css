@@ -86,6 +86,54 @@ article .main__article-rigth img {
   width: 100%;
   height: auto;
 }
+.main__product .main__product-health, .main__product .main__product-furniture {
+  width: 100%;
+  height: auto;
+  padding: 0px 69px 0px 73px;
+  margin-bottom: 73px;
+  color: #7C6A0A;
+}
+.main__product .main__product-health h2, .main__product .main__product-furniture h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.main__product .main__product-health .main__product-health-cards, .main__product .main__product-furniture .main__product-health-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
+  margin-top: 60px;
+}
+.main__product .main__product-health .main__product-health-cards .health__cards, .main__product .main__product-furniture .main__product-health-cards .health__cards {
+  width: 324px;
+  height: 502px;
+  text-align: center;
+  background-color: #FFDAC6;
+  border-radius: 8px;
+}
+.main__product .main__product-health .main__product-health-cards .health__cards div, .main__product .main__product-furniture .main__product-health-cards .health__cards div {
+  width: 100%;
+  text-align: end;
+}
+.main__product .main__product-health .main__product-health-cards .health__cards div img, .main__product .main__product-furniture .main__product-health-cards .health__cards div img {
+  width: 31px;
+  margin: 14px 15px 12px 0;
+}
+.main__product .main__product-health .main__product-health-cards .health__cards .img__product, .main__product .main__product-furniture .main__product-health-cards .health__cards .img__product {
+  width: 241px;
+  height: 300px;
+  border-radius: 6px;
+}
+.main__product .main__product-health .main__product-health-cards .health__cards h3, .main__product .main__product-furniture .main__product-health-cards .health__cards h3, .main__product .main__product-health .main__product-health-cards .health__cards p, .main__product .main__product-furniture .main__product-health-cards .health__cards p {
+  width: 239px;
+  margin: 0 0 0 41px;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.main__product .main__product-health .main__product-health-cards .health__cards p, .main__product .main__product-furniture .main__product-health-cards .health__cards p {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
 footer {
   background-color: #FA9500;
   width: 100%;
