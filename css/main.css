@@ -140,17 +140,17 @@ article .main__article-rigth img {
   color: #FFF;
 }
 
-.main__more-content-about {
+.main__more-content-about, .main__more-content-style {
   width: 100%;
   height: auto;
   padding: 0px 69px 0px 73px;
 }
-.main__more-content-about h2 {
+.main__more-content-about h2, .main__more-content-style h2 {
   font-size: 2.5rem;
-  font-weight: normal;
+  font-weight: 500;
   color: #7C6A0A;
 }
-.main__more-content-about div {
+.main__more-content-about div, .main__more-content-style div {
   width: 100%;
   height: auto;
   display: inline-flex;
@@ -158,17 +158,17 @@ article .main__article-rigth img {
   gap: 100px;
   margin-left: 70px;
 }
-.main__more-content-about div .main__more-content-about-earth, .main__more-content-about div .main__more-content-about-innovation {
+.main__more-content-about div .main__more-content-about-earth, .main__more-content-style div .main__more-content-about-earth, .main__more-content-about div .main__more-content-about-innovation, .main__more-content-style div .main__more-content-about-innovation {
   display: inline-flex;
   flex-wrap: wrap;
   margin: 100px 0 100px 0;
 }
-.main__more-content-about div .main__more-content-about-earth img, .main__more-content-about div .main__more-content-about-innovation img {
+.main__more-content-about div .main__more-content-about-earth img, .main__more-content-style div .main__more-content-about-earth img, .main__more-content-about div .main__more-content-about-innovation img, .main__more-content-style div .main__more-content-about-innovation img {
   width: 164px;
   height: 164px;
   margin: auto;
 }
-.main__more-content-about div .main__more-content-about-earth p, .main__more-content-about div .main__more-content-about-innovation p {
+.main__more-content-about div .main__more-content-about-earth p, .main__more-content-style div .main__more-content-about-earth p, .main__more-content-about div .main__more-content-about-innovation p, .main__more-content-style div .main__more-content-about-innovation p {
   width: 362px;
   height: 162px;
   text-align: center;
@@ -176,10 +176,22 @@ article .main__article-rigth img {
   font-weight: 500;
   color: #E86424;
 }
-.main__more-content-about div .main__more-content-about-innovation p {
+.main__more-content-about div .main__more-content-about-innovation p, .main__more-content-style div .main__more-content-about-innovation p {
   width: 295px;
   height: 117px;
   margin: auto;
+}
+
+.main__more-content-style div {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 20px 0 100px 0;
+}
+.main__more-content-style img {
+  width: 396px;
+  height: 398px;
+  border-radius: 16px;
 }
 
 footer {
