@@ -91,6 +91,11 @@ article {
       @include buttonStyle;
       background-color: #FA9500;
       color: #FFEFE7;
+
+      &:hover{
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+      }
     }
   }
 
@@ -250,6 +255,11 @@ article {
     width: 396px;
     height: 398px;
     border-radius: 16px;
+
+    &:hover{
+      transform: scale(1.1);
+      transition-duration: 0.3s;
+    }
   }
 
 }
