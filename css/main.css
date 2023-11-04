@@ -140,6 +140,48 @@ article .main__article-rigth img {
   color: #FFF;
 }
 
+.main__more-content-about {
+  width: 100%;
+  height: auto;
+  padding: 0px 69px 0px 73px;
+}
+.main__more-content-about h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #7C6A0A;
+}
+.main__more-content-about div {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-left: 70px;
+}
+.main__more-content-about div .main__more-content-about-earth, .main__more-content-about div .main__more-content-about-innovation {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 100px 0 100px 0;
+}
+.main__more-content-about div .main__more-content-about-earth img, .main__more-content-about div .main__more-content-about-innovation img {
+  width: 164px;
+  height: 164px;
+  margin: auto;
+}
+.main__more-content-about div .main__more-content-about-earth p, .main__more-content-about div .main__more-content-about-innovation p {
+  width: 362px;
+  height: 162px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #E86424;
+}
+.main__more-content-about div .main__more-content-about-innovation p {
+  width: 295px;
+  height: 117px;
+  margin: auto;
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;

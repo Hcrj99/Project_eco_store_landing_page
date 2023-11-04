@@ -185,6 +185,59 @@ article {
   }
 }
 
+
+.main__more-content-about {
+  width: 100%;
+  height: auto;
+  padding: 0px 69px 0px 73px;
+
+  h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: $primary-text-color;
+  }
+
+  div {
+    width: 100%;
+    height: auto;
+    @include flexCenter(inline-flex);
+    gap: 100px;
+    margin-left: 70px;
+
+    .main__more-content-about-earth{
+      @include flexCenter(inline-flex);
+      margin: 100px 0 100px 0;
+
+      img {
+        width: 164px;
+        height: 164px;
+        margin: auto;
+      }
+
+      p {
+        width: 362px;
+        height: 162px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #E86424;
+      }
+    }
+
+    .main__more-content-about-innovation {
+      @extend .main__more-content-about-earth;
+      
+      p{
+        width: 295px;
+        height: 117px;
+        margin: auto;
+      }
+    
+    }
+
+  }
+}
+
 footer {
   $backgorund: $aditional-color;
   background-color: $backgorund;
