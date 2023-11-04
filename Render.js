@@ -1,10 +1,11 @@
 const healthContainer = document.querySelector('.main__product-health-cards');
+const furnitureContainer = document.querySelector('.main__product-furniture-cards');
 
 
 function renderCards(cardsType, container){
   cardsType.forEach(key => {
     const sectionCards  = document.createElement('section');
-    sectionCards.classList.add('health__cards');
+    sectionCards.classList.add('product__cards');
 
     const divImage = document.createElement('div')
     const hearthImage = document.createElement('img');
@@ -31,3 +32,4 @@ function renderCards(cardsType, container){
 }
 
 renderCards(cardHealt, healthContainer);
+renderCards(cardFurniture, furnitureContainer);

@@ -129,7 +129,7 @@ article {
       gap: 140px;
       margin-top: 60px;
 
-      .health__cards {
+      .product__cards {
         width: 324px;
         height: 502px;
         text-align: center;
@@ -172,6 +172,16 @@ article {
 
   .main__product-furniture{
     @extend .main__product-health;
+
+    .main__product-furniture-cards{
+      @extend .main__product-health-cards;
+
+      .product__cards {
+        background-color: #BABD8D;
+        color: #FFF;
+      }
+
+    }
   }
 }
 
