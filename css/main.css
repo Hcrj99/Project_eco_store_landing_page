@@ -1,13 +1,16 @@
-.hmtl {
-  font-size: 62.5%;
-}
-
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   background-color: #FFEFE7;
   font-family: "IBM Plex Sans", sans-serif;
+}
+
+.hmtl {
+  font-size: 62.5%;
 }
 
 nav {
@@ -15,16 +18,19 @@ nav {
   height: 100px;
   display: inline-flex;
   flex-wrap: wrap;
-  padding: 33px 60px 32px 85px;
-  gap: 70%;
+  padding: 25px 35px 0px 22px;
+  justify-content: space-between;
   color: #7C6A0A;
 }
 nav p {
   font-size: 1.5rem;
   font-weight: 400;
+  margin: auto 0;
+  text-align: start;
 }
 nav .nav__icons {
   margin: auto 0;
+  text-align: end;
 }
 nav .nav__icons button {
   background: none;
@@ -39,33 +45,37 @@ article {
   color: #7C6A0A;
   width: 100%;
   height: auto;
-  padding: 0px 69px 0 65px;
-  display: inline-flex;
-}
-article h1 {
-  width: 514px;
-  height: 78px;
-  font-size: 3rem;
-  font-style: normal;
+  padding: 0px 27px 0 27px;
+  margin-bottom: 50px;
 }
 article .main__article-left {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
+article .main__article-left h1 {
+  width: 100%;
+  height: auto;
+  font-size: 1.7rem;
+  font-style: normal;
+  text-align: justify;
+  font-weight: 600;
+  margin-top: 30px;
+}
 article .main__article-left p {
-  width: 592px;
-  height: 166px;
-  font-size: 1.6rem;
+  width: 100%;
+  height: auto;
+  font-size: 0.9rem;
   font-weight: 400;
-  text-justify: content;
+  text-align: justify;
+  margin-top: 20px;
 }
 article .main__article-left button {
-  width: 261px;
-  height: 73px;
-  margin-top: 100px;
+  width: 150px;
+  height: 40px;
+  margin-top: 50px;
   border-radius: 35px;
-  font-size: 1.2rem;
-  padding: 21px 85px 22px 46px;
+  font-size: 0.7rem;
+  padding: 12px 48px 12px 26px;
   font-weight: bold;
   background: none;
   border-style: none;
@@ -77,133 +87,305 @@ article .main__article-left button:hover {
   transition-duration: 0.3s;
 }
 article .main__article-rigth {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 article .main__article-rigth img {
-  width: 550px;
-  height: 686px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   border-radius: 19px;
 }
 
-.main__product {
+.main__product, .main__more-content-about, .main__more-content-style, .main__more-content-map, footer {
   width: 100%;
   height: auto;
+  padding: 0px 27px 0 27px;
 }
-.main__product .main__product-health, .main__product .main__product-furniture {
+.main__product h2, .main__more-content-about h2, .main__more-content-style h2, .main__more-content-map h2, footer h2 {
+  font-size: 1.7rem;
+  font-weight: normal;
+  color: #7C6A0A;
+}
+.main__product .main__product-health, .main__more-content-about .main__product-health, .main__more-content-style .main__product-health, .main__more-content-map .main__product-health, footer .main__product-health, .main__product .main__product-furniture, .main__more-content-about .main__product-furniture, .main__more-content-style .main__product-furniture, .main__more-content-map .main__product-furniture, footer .main__product-furniture {
   width: 100%;
   height: auto;
-  padding: 0px 69px 0px 73px;
   margin-bottom: 73px;
   color: #7C6A0A;
 }
-.main__product .main__product-health h2, .main__product .main__product-furniture h2 {
-  font-size: 2.5rem;
-  font-weight: normal;
-}
-.main__product .main__product-health .main__product-health-cards, .main__product .main__product-health .main__product-furniture .main__product-furniture-cards, .main__product .main__product-furniture .main__product-health .main__product-furniture-cards, .main__product .main__product-furniture .main__product-health-cards, .main__product .main__product-furniture .main__product-furniture-cards {
+.main__product .main__product-health .main__product-health-cards, .main__more-content-about .main__product-health .main__product-health-cards, .main__more-content-style .main__product-health .main__product-health-cards, .main__more-content-map .main__product-health .main__product-health-cards, footer .main__product-health .main__product-health-cards, .main__product .main__product-health .main__product-furniture .main__product-furniture-cards, .main__more-content-about .main__product-health .main__product-furniture .main__product-furniture-cards, .main__more-content-style .main__product-health .main__product-furniture .main__product-furniture-cards, .main__more-content-map .main__product-health .main__product-furniture .main__product-furniture-cards, footer .main__product-health .main__product-furniture .main__product-furniture-cards, .main__product .main__product-furniture .main__product-health .main__product-furniture-cards, .main__more-content-about .main__product-furniture .main__product-health .main__product-furniture-cards, .main__more-content-style .main__product-furniture .main__product-health .main__product-furniture-cards, .main__more-content-map .main__product-furniture .main__product-health .main__product-furniture-cards, footer .main__product-furniture .main__product-health .main__product-furniture-cards, .main__product .main__product-furniture .main__product-health-cards, .main__more-content-about .main__product-furniture .main__product-health-cards, .main__more-content-style .main__product-furniture .main__product-health-cards, .main__more-content-map .main__product-furniture .main__product-health-cards, footer .main__product-furniture .main__product-health-cards, .main__product .main__product-furniture .main__product-furniture-cards, .main__more-content-about .main__product-furniture .main__product-furniture-cards, .main__more-content-style .main__product-furniture .main__product-furniture-cards, .main__more-content-map .main__product-furniture .main__product-furniture-cards, footer .main__product-furniture .main__product-furniture-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 140px;
+  gap: 56px;
   margin-top: 60px;
 }
-.main__product .main__product-health .main__product-health-cards .product__cards, .main__product .main__product-health .main__product-furniture .main__product-furniture-cards .product__cards, .main__product .main__product-furniture .main__product-health .main__product-furniture-cards .product__cards, .main__product .main__product-furniture .main__product-health-cards .product__cards, .main__product .main__product-furniture .main__product-furniture-cards .product__cards {
-  width: 324px;
+.main__product .main__product-health .main__product-health-cards .product__cards, .main__more-content-about .main__product-health .main__product-health-cards .product__cards, .main__more-content-style .main__product-health .main__product-health-cards .product__cards, .main__more-content-map .main__product-health .main__product-health-cards .product__cards, footer .main__product-health .main__product-health-cards .product__cards, .main__product .main__product-health .main__product-furniture .main__product-furniture-cards .product__cards, .main__more-content-about .main__product-health .main__product-furniture .main__product-furniture-cards .product__cards, .main__more-content-style .main__product-health .main__product-furniture .main__product-furniture-cards .product__cards, .main__more-content-map .main__product-health .main__product-furniture .main__product-furniture-cards .product__cards, footer .main__product-health .main__product-furniture .main__product-furniture-cards .product__cards, .main__product .main__product-furniture .main__product-health .main__product-furniture-cards .product__cards, .main__more-content-about .main__product-furniture .main__product-health .main__product-furniture-cards .product__cards, .main__more-content-style .main__product-furniture .main__product-health .main__product-furniture-cards .product__cards, .main__more-content-map .main__product-furniture .main__product-health .main__product-furniture-cards .product__cards, footer .main__product-furniture .main__product-health .main__product-furniture-cards .product__cards, .main__product .main__product-furniture .main__product-health-cards .product__cards, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards, footer .main__product-furniture .main__product-health-cards .product__cards, .main__product .main__product-furniture .main__product-furniture-cards .product__cards, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards, footer .main__product-furniture .main__product-furniture-cards .product__cards {
+  max-width: 324px;
   height: 502px;
   text-align: center;
+  justify-content: center;
   background-color: #FFDAC6;
   border-radius: 8px;
 }
-.main__product .main__product-health .main__product-health-cards .product__cards div, .main__product .main__product-furniture .main__product-health-cards .product__cards div, .main__product .main__product-furniture .main__product-furniture-cards .product__cards div {
+.main__product .main__product-health .main__product-health-cards .product__cards div, .main__more-content-about .main__product-health .main__product-health-cards .product__cards div, .main__more-content-style .main__product-health .main__product-health-cards .product__cards div, .main__more-content-map .main__product-health .main__product-health-cards .product__cards div, footer .main__product-health .main__product-health-cards .product__cards div, .main__product .main__product-furniture .main__product-health-cards .product__cards div, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards div, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards div, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards div, footer .main__product-furniture .main__product-health-cards .product__cards div, .main__product .main__product-furniture .main__product-furniture-cards .product__cards div, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards div, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards div, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards div, footer .main__product-furniture .main__product-furniture-cards .product__cards div {
   width: 100%;
   text-align: end;
 }
-.main__product .main__product-health .main__product-health-cards .product__cards div img, .main__product .main__product-furniture .main__product-health-cards .product__cards div img, .main__product .main__product-furniture .main__product-furniture-cards .product__cards div img {
+.main__product .main__product-health .main__product-health-cards .product__cards div img, .main__more-content-about .main__product-health .main__product-health-cards .product__cards div img, .main__more-content-style .main__product-health .main__product-health-cards .product__cards div img, .main__more-content-map .main__product-health .main__product-health-cards .product__cards div img, footer .main__product-health .main__product-health-cards .product__cards div img, .main__product .main__product-furniture .main__product-health-cards .product__cards div img, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards div img, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards div img, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards div img, footer .main__product-furniture .main__product-health-cards .product__cards div img, .main__product .main__product-furniture .main__product-furniture-cards .product__cards div img, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards div img, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards div img, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards div img, footer .main__product-furniture .main__product-furniture-cards .product__cards div img {
   width: 31px;
   margin: 14px 15px 12px 0;
 }
-.main__product .main__product-health .main__product-health-cards .product__cards .img__product, .main__product .main__product-furniture .main__product-health-cards .product__cards .img__product, .main__product .main__product-furniture .main__product-furniture-cards .product__cards .img__product {
+.main__product .main__product-health .main__product-health-cards .product__cards .img__product, .main__more-content-about .main__product-health .main__product-health-cards .product__cards .img__product, .main__more-content-style .main__product-health .main__product-health-cards .product__cards .img__product, .main__more-content-map .main__product-health .main__product-health-cards .product__cards .img__product, footer .main__product-health .main__product-health-cards .product__cards .img__product, .main__product .main__product-furniture .main__product-health-cards .product__cards .img__product, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards .img__product, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards .img__product, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards .img__product, footer .main__product-furniture .main__product-health-cards .product__cards .img__product, .main__product .main__product-furniture .main__product-furniture-cards .product__cards .img__product, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards .img__product, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards .img__product, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards .img__product, footer .main__product-furniture .main__product-furniture-cards .product__cards .img__product {
   width: 241px;
   height: 300px;
   border-radius: 6px;
 }
-.main__product .main__product-health .main__product-health-cards .product__cards h3, .main__product .main__product-furniture .main__product-health-cards .product__cards h3, .main__product .main__product-furniture .main__product-furniture-cards .product__cards h3, .main__product .main__product-health .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards p {
+.main__product .main__product-health .main__product-health-cards .product__cards h3, .main__product .main__product-health .main__product-health-cards .product__cards .main__more-content-map h4, .main__product .main__product-health .main__product-health-cards .product__cards footer h4, .main__more-content-about .main__product-health .main__product-health-cards .product__cards h3, .main__more-content-about .main__product-health .main__product-health-cards .product__cards .main__more-content-map h4, .main__more-content-about .main__product-health .main__product-health-cards .product__cards footer h4, .main__more-content-style .main__product-health .main__product-health-cards .product__cards h3, .main__more-content-style .main__product-health .main__product-health-cards .product__cards .main__more-content-map h4, .main__more-content-style .main__product-health .main__product-health-cards .product__cards footer h4, .main__more-content-map .main__product-health .main__product-health-cards .product__cards h3, footer .main__product-health .main__product-health-cards .product__cards h3, .main__more-content-map .main__product-health .main__product-health-cards .product__cards h4, footer .main__product-health .main__product-health-cards .product__cards h4, .main__product .main__product-furniture .main__product-health-cards .product__cards h3, .main__product .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map h4, .main__product .main__product-furniture .main__product-health-cards .product__cards footer h4, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards h3, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map h4, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards footer h4, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards h3, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map h4, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards footer h4, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards h3, footer .main__product-furniture .main__product-health-cards .product__cards h3, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards h4, footer .main__product-furniture .main__product-health-cards .product__cards h4, .main__product .main__product-furniture .main__product-furniture-cards .product__cards h3, .main__product .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map h4, .main__product .main__product-furniture .main__product-furniture-cards .product__cards footer h4, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards h3, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map h4, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards footer h4, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards h3, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map h4, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards footer h4, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards h3, footer .main__product-furniture .main__product-furniture-cards .product__cards h3, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards h4, footer .main__product-furniture .main__product-furniture-cards .product__cards h4, .main__product .main__product-health .main__product-health-cards .product__cards p, .main__more-content-about .main__product-health .main__product-health-cards .product__cards p, .main__more-content-style .main__product-health .main__product-health-cards .product__cards p, .main__more-content-map .main__product-health .main__product-health-cards .product__cards p, footer .main__product-health .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards p, footer .main__product-furniture .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards p, footer .main__product-furniture .main__product-furniture-cards .product__cards p {
   width: 239px;
-  margin: 0 0 0 41px;
-  text-align: start;
+  margin: 0 15px 0 21px;
+  text-align: justify;
   font-size: 1.5rem;
   font-weight: 600;
 }
-.main__product .main__product-health .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards p {
+.main__product .main__product-health .main__product-health-cards .product__cards p, .main__more-content-about .main__product-health .main__product-health-cards .product__cards p, .main__more-content-style .main__product-health .main__product-health-cards .product__cards p, .main__more-content-map .main__product-health .main__product-health-cards .product__cards p, footer .main__product-health .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards p, footer .main__product-furniture .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards p, footer .main__product-furniture .main__product-furniture-cards .product__cards p {
   font-size: 0.9rem;
   font-weight: normal;
 }
-.main__product .main__product-furniture .main__product-furniture-cards .product__cards {
+.main__product .main__product-furniture .main__product-furniture-cards .product__cards, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards, footer .main__product-furniture .main__product-furniture-cards .product__cards {
   background-color: #BABD8D;
   color: #FFF;
 }
 
-.main__more-content-about, .main__more-content-style {
-  width: 100%;
-  height: auto;
-  padding: 0px 69px 0px 73px;
-}
-.main__more-content-about h2, .main__more-content-style h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: #7C6A0A;
-}
-.main__more-content-about div, .main__more-content-style div {
+.main__more-content-about div, .main__more-content-style div, .main__more-content-map div, footer div {
   width: 100%;
   height: auto;
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 100px;
-  margin-left: 70px;
+  gap: 50px;
 }
-.main__more-content-about div .main__more-content-about-earth, .main__more-content-style div .main__more-content-about-earth, .main__more-content-about div .main__more-content-about-innovation, .main__more-content-style div .main__more-content-about-innovation {
+.main__more-content-about div .main__more-content-about-earth, .main__more-content-style div .main__more-content-about-earth, .main__more-content-map div .main__more-content-about-earth, footer div .main__more-content-about-earth, .main__more-content-about div .main__more-content-about-innovation, .main__more-content-style div .main__more-content-about-innovation, .main__more-content-map div .main__more-content-about-innovation, footer div .main__more-content-about-innovation {
   display: inline-flex;
   flex-wrap: wrap;
   margin: 100px 0 100px 0;
 }
-.main__more-content-about div .main__more-content-about-earth img, .main__more-content-style div .main__more-content-about-earth img, .main__more-content-about div .main__more-content-about-innovation img, .main__more-content-style div .main__more-content-about-innovation img {
-  width: 164px;
-  height: 164px;
+.main__more-content-about div .main__more-content-about-earth img, .main__more-content-style div .main__more-content-about-earth img, .main__more-content-map div .main__more-content-about-earth img, footer div .main__more-content-about-earth img, .main__more-content-about div .main__more-content-about-innovation img, .main__more-content-style div .main__more-content-about-innovation img, .main__more-content-map div .main__more-content-about-innovation img, footer div .main__more-content-about-innovation img {
+  width: 73px;
+  height: 73px;
   margin: auto;
 }
-.main__more-content-about div .main__more-content-about-earth p, .main__more-content-style div .main__more-content-about-earth p, .main__more-content-about div .main__more-content-about-innovation p, .main__more-content-style div .main__more-content-about-innovation p {
-  width: 362px;
+.main__more-content-about div .main__more-content-about-earth p, .main__more-content-style div .main__more-content-about-earth p, .main__more-content-map div .main__more-content-about-earth p, footer div .main__more-content-about-earth p, .main__more-content-about div .main__more-content-about-innovation p, .main__more-content-style div .main__more-content-about-innovation p, .main__more-content-map div .main__more-content-about-innovation p, footer div .main__more-content-about-innovation p {
+  width: 163px;
   height: 162px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #E86424;
 }
-.main__more-content-about div .main__more-content-about-innovation p, .main__more-content-style div .main__more-content-about-innovation p {
-  width: 295px;
+.main__more-content-about div .main__more-content-about-innovation p, .main__more-content-style div .main__more-content-about-innovation p, .main__more-content-map div .main__more-content-about-innovation p, footer div .main__more-content-about-innovation p {
+  width: 163px;
   height: 117px;
   margin: auto;
 }
 
-.main__more-content-style div {
+.main__more-content-style div, .main__more-content-map div, footer div {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 40px;
   margin: 20px 0 100px 0;
 }
-.main__more-content-style img {
-  width: 396px;
-  height: 398px;
+.main__more-content-style img, .main__more-content-map img, footer img {
+  width: 290px;
+  height: 300px;
   border-radius: 16px;
 }
-.main__more-content-style img:hover {
+.main__more-content-style img:hover, .main__more-content-map img:hover, footer img:hover {
   transform: scale(1.1);
   transition-duration: 0.3s;
+}
+
+.main__more-content-map, footer {
+  margin-bottom: 100px;
+}
+.main__more-content-map div, footer div {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 30px;
+}
+.main__more-content-map div img, footer div img {
+  width: 100%;
+  height: 480px;
+  margin-bottom: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__more-content-map h3, footer h3, .main__more-content-map h4, footer h4, .main__product .main__product-health .main__product-health-cards .product__cards .main__more-content-map p, .main__product .main__product-health .main__product-health-cards .product__cards footer p, .main__product .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map p, .main__product .main__product-furniture .main__product-health-cards .product__cards footer p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards footer p, .main__more-content-about .main__product-health .main__product-health-cards .product__cards .main__more-content-map p, .main__more-content-about .main__product-health .main__product-health-cards .product__cards footer p, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map p, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards footer p, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map p, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards footer p, .main__more-content-style .main__product-health .main__product-health-cards .product__cards .main__more-content-map p, .main__more-content-style .main__product-health .main__product-health-cards .product__cards footer p, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map p, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards footer p, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map p, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards footer p, .main__more-content-map .main__product-health .main__product-health-cards .product__cards p, footer .main__product-health .main__product-health-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards p, footer .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards p, footer .main__product-furniture .main__product-furniture-cards .product__cards p {
+  width: 100%;
+  height: 57px;
+  margin: 0;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #E86424;
+}
+.main__more-content-map h4, footer h4 {
+  font-size: 1rem;
 }
 
 footer {
   background-color: #FA9500;
   width: 100%;
   height: 500px;
+  color: #FFF;
+  margin-bottom: 0;
+}
+footer h3, footer .main__product .main__product-health .main__product-health-cards .product__cards p, .main__product .main__product-health .main__product-health-cards .product__cards footer p, footer .main__product .main__product-furniture .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-health-cards .product__cards footer p, footer .main__product .main__product-furniture .main__product-furniture-cards .product__cards p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards footer p, footer .main__more-content-about .main__product-health .main__product-health-cards .product__cards p, .main__more-content-about .main__product-health .main__product-health-cards .product__cards footer p, footer .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards footer p, footer .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards footer p, footer .main__more-content-style .main__product-health .main__product-health-cards .product__cards p, .main__more-content-style .main__product-health .main__product-health-cards .product__cards footer p, footer .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards footer p, footer .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards footer p, footer .main__more-content-map .main__product-health .main__product-health-cards .product__cards p, .main__more-content-map .main__product-health .main__product-health-cards .product__cards footer p, footer .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards footer p, footer .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards footer p, footer .main__more-content-map h4, .main__more-content-map footer h4, footer .main__product-health .main__product-health-cards .product__cards p, footer .main__product-furniture .main__product-health-cards .product__cards p, footer .main__product-health .main__product-furniture .main__product-furniture-cards .product__cards p, footer .main__product-furniture .main__product-health .main__product-furniture-cards .product__cards p, footer .main__product-furniture .main__product-furniture-cards .product__cards p, footer h4 {
+  font-size: 2rem;
+  color: #FFF;
+}
+footer p {
+  margin-top: 21px;
+}
+footer .footer__social-media {
+  width: 193px;
+  height: 43px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 230px auto 0px 0px;
+}
+footer .footer__social-media img {
+  width: 43px;
+  height: 43px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    gap: 50%;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    gap: 10%;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  article .main__article-left {
+    order: 2;
+  }
+  article .main__article-rigth {
+    order: 1;
+  }
+  article img {
+    width: 336px;
+  }
+}
+@media (max-width: 767px) {
+  .nav__menu-responsive {
+    display: none;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  article .main__article-left {
+    order: 2;
+  }
+  article .main__article-rigth {
+    order: 1;
+  }
+  .main__more-content-about div, .main__more-content-style div, .main__more-content-map div, footer div {
+    display: flex;
+    flex-direction: column;
+    gap: none;
+    margin-left: 0;
+  }
+  .main__more-content-about div .main__more-content-about-earth, .main__more-content-style div .main__more-content-about-earth, .main__more-content-map div .main__more-content-about-earth, footer div .main__more-content-about-earth, .main__more-content-about div .main__more-content-about-innovation, .main__more-content-style div .main__more-content-about-innovation, .main__more-content-map div .main__more-content-about-innovation, footer div .main__more-content-about-innovation {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+  }
+  .main__more-content-about div .main__more-content-about-earth img, .main__more-content-style div .main__more-content-about-earth img, .main__more-content-map div .main__more-content-about-earth img, footer div .main__more-content-about-earth img, .main__more-content-about div .main__more-content-about-innovation img, .main__more-content-style div .main__more-content-about-innovation img, .main__more-content-map div .main__more-content-about-innovation img, footer div .main__more-content-about-innovation img {
+    width: 73px;
+    height: 73px;
+    margin: auto;
+  }
+  .main__more-content-about div .main__more-content-about-earth p, .main__more-content-style div .main__more-content-about-earth p, .main__more-content-map div .main__more-content-about-earth p, footer div .main__more-content-about-earth p, .main__more-content-about div .main__more-content-about-innovation p, .main__more-content-style div .main__more-content-about-innovation p, .main__more-content-map div .main__more-content-about-innovation p, footer div .main__more-content-about-innovation p {
+    width: 100%;
+    height: 162px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #E86424;
+  }
+  .main__more-content-style img, .main__more-content-map img, footer img {
+    width: 100%;
+    height: 398px;
+    border-radius: 16px;
+  }
+}
+@media (min-width: 767px) {
+  .nav__icons-menu-mobile {
+    display: none;
+  }
+  article {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    text-align: start;
+  }
+  article .main__article-left {
+    width: 50%;
+    order: 2;
+  }
+  article .main__article-rigth {
+    width: 50%;
+    order: 1;
+  }
+  article .main__article-rigth img {
+    max-width: 550px;
+    max-height: 686px;
+  }
+  .main__more-content-about div .main__more-content-about-earth, .main__more-content-style div .main__more-content-about-earth, .main__more-content-map div .main__more-content-about-earth, footer div .main__more-content-about-earth, .main__more-content-about div .main__more-content-about-innovation, .main__more-content-style div .main__more-content-about-innovation, .main__more-content-map div .main__more-content-about-innovation, footer div .main__more-content-about-innovation {
+    width: 45%;
+  }
+  .main__more-content-about div .main__more-content-about-earth img, .main__more-content-style div .main__more-content-about-earth img, .main__more-content-map div .main__more-content-about-earth img, footer div .main__more-content-about-earth img, .main__more-content-about div .main__more-content-about-innovation img, .main__more-content-style div .main__more-content-about-innovation img, .main__more-content-map div .main__more-content-about-innovation img, footer div .main__more-content-about-innovation img {
+    width: 144px;
+    height: 154px;
+    margin: auto;
+  }
+  .main__more-content-about div .main__more-content-about-earth p, .main__more-content-style div .main__more-content-about-earth p, .main__more-content-map div .main__more-content-about-earth p, footer div .main__more-content-about-earth p, .main__more-content-about div .main__more-content-about-innovation p, .main__more-content-style div .main__more-content-about-innovation p, .main__more-content-map div .main__more-content-about-innovation p, footer div .main__more-content-about-innovation p {
+    width: 250px;
+    height: 162px;
+    text-align: center;
+    margin: auto 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #E86424;
+  }
+  .main__more-content-map h3, footer h3, .main__product .main__product-health .main__product-health-cards .product__cards .main__more-content-map p, footer .main__product .main__product-health .main__product-health-cards .product__cards p, .main__product .main__product-health .main__product-health-cards .product__cards footer p, .main__product .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map p, footer .main__product .main__product-furniture .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-health-cards .product__cards footer p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map p, footer .main__product .main__product-furniture .main__product-furniture-cards .product__cards p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards footer p, .main__more-content-about .main__product-health .main__product-health-cards .product__cards .main__more-content-map p, footer .main__more-content-about .main__product-health .main__product-health-cards .product__cards p, .main__more-content-about .main__product-health .main__product-health-cards .product__cards footer p, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map p, footer .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards footer p, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map p, footer .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards footer p, .main__more-content-style .main__product-health .main__product-health-cards .product__cards .main__more-content-map p, footer .main__more-content-style .main__product-health .main__product-health-cards .product__cards p, .main__more-content-style .main__product-health .main__product-health-cards .product__cards footer p, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map p, footer .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards footer p, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map p, footer .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards footer p, .main__more-content-map .main__product-health .main__product-health-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-map h4, footer .main__product-health .main__product-health-cards .product__cards .main__more-content-map p, footer .main__product-health .main__product-health-cards .product__cards p, footer .main__product-furniture .main__product-health-cards .product__cards .main__more-content-map p, footer .main__product-furniture .main__product-health-cards .product__cards p, footer .main__product-health .main__product-furniture .main__product-furniture-cards .product__cards p, footer .main__product-furniture .main__product-health .main__product-furniture-cards .product__cards p, footer .main__product-furniture .main__product-furniture-cards .product__cards .main__more-content-map p, footer .main__product-furniture .main__product-furniture-cards .product__cards p, footer h4 {
+    width: 100%;
+    height: 57px;
+    margin: 0;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #E86424;
+  }
+  .main__more-content-map h4, footer h4 {
+    font-size: 1.5rem;
+  }
+  footer h3, footer .main__product .main__product-health .main__product-health-cards .product__cards p, .main__product .main__product-health .main__product-health-cards .product__cards footer p, footer .main__product .main__product-furniture .main__product-health-cards .product__cards p, .main__product .main__product-furniture .main__product-health-cards .product__cards footer p, footer .main__product .main__product-furniture .main__product-furniture-cards .product__cards p, .main__product .main__product-furniture .main__product-furniture-cards .product__cards footer p, footer .main__more-content-about .main__product-health .main__product-health-cards .product__cards p, .main__more-content-about .main__product-health .main__product-health-cards .product__cards footer p, footer .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-health-cards .product__cards footer p, footer .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-about .main__product-furniture .main__product-furniture-cards .product__cards footer p, footer .main__more-content-style .main__product-health .main__product-health-cards .product__cards p, .main__more-content-style .main__product-health .main__product-health-cards .product__cards footer p, footer .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-health-cards .product__cards footer p, footer .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-style .main__product-furniture .main__product-furniture-cards .product__cards footer p, footer .main__more-content-map .main__product-health .main__product-health-cards .product__cards p, .main__more-content-map .main__product-health .main__product-health-cards .product__cards footer p, footer .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-health-cards .product__cards footer p, footer .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards p, .main__more-content-map .main__product-furniture .main__product-furniture-cards .product__cards footer p, footer .main__more-content-map h4, .main__more-content-map footer h4, footer .main__product-health .main__product-health-cards .product__cards p, footer .main__product-furniture .main__product-health-cards .product__cards p, footer .main__product-health .main__product-furniture .main__product-furniture-cards .product__cards p, footer .main__product-furniture .main__product-health .main__product-furniture-cards .product__cards p, footer .main__product-furniture .main__product-furniture-cards .product__cards p, footer h4 {
+    font-size: 2rem;
+    color: #FFF;
+  }
 }/*# sourceMappingURL=main.css.map */
